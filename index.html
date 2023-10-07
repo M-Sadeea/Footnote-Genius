@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footnote Genius Example</title>
+
+  <style>
+    body{
+      max-width: 800px;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+      padding: 50px;
+    }
+    sup,
+    sup a{
+      color: red !important;
+      background-color: yellow;
+    }
+    code{
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #ededed;
+      border-radius: 7px;
+    }
+    .custom-style{
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Footnote Genius Example</h1>
+  <p>FootnoteGenius is your solution for effortlessly enhancing your HTML web pages with footnotes. It simplifies the process, allowing you to focus on your content.</p>
+  <p>I've highlighted the references to make them easier to spot.</p>
+  <p>I will use a Lorem ipsum text up here :)</p>
+  <p>Lorem ipsum dolor sit amet, consectetur<sup class="html-footnote">This is the first Footnote! it is that easy, just a <code>&lt;sup&gt;</code> element, with <code>html-footnote</code> class.</sup> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum fusce ut placerat orci nulla. Duis ultricies lacus sed turpis tincidunt id aliquet. Proin sed libero enim sed faucibus turpis. Leo duis ut diam quam nulla porttitor. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris. Congue nisi vitae suscipit tellus mauris a diam. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Facilisis magna etiam tempor orci eu lobortis elementum. Porttitor leo a diam sollicitudin tempor id. Dignissim sodales ut eu sem. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Sed vulputate mi sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Mattis nunc sed blandit libero volutpat sed. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit. Consequat interdum varius sit amet. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia. Vitae tortor condimentum lacinia quis vel eros donec.</p>
+  <p>Cursus mattis molestie <sup class="html-footnote" data-fn-group="new-group">You can group them using <code>data-fn-group="name"</code> attribute.</sup> a iaculis. Mi ipsum faucibus vitae aliquet. Malesuada nunc vel risus commodo viverra maecenas accumsan. Tortor vitae purus faucibus ornare suspendisse. Vitae tempus quam pellentesque nec nam aliquam sem. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Nisl pretium fusce id velit ut tortor. Platea dictumst quisque sagittis purus sit amet volutpat consequat. Lectus nulla at volutpat diam. In hac habitasse platea dictumst vestibulum rhoncus est. Sit amet facilisis magna etiam tempor orci eu. Dui nunc mattis enim ut tellus.</p>
+  <p>Rhoncus dolor purus non enim. Nunc non blandit<sup class="html-footnote" data-fn-group="new-group">This one belong to the second group</sup> massa enim nec. Viverra maecenas accumsan lacus vel facilisis volutpat. Maecenas accumsan lacus vel facilisis volutpat est. Arcu odio ut sem nulla pharetra. Aliquet enim tortor at auctor urna nunc id cursus metus. Tellus at urna condimentum mattis pellentesque id. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Cras fermentum odio eu feugiat pretium nibh.</p>
+  <p>Congue nisi vitae suscipit tellus mauris<sup class="html-footnote">But this on goes first!</sup> Etiam tempor orci eu lobortis elementum nibh tellus. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Et odio pellentesque diam volutpat. Suscipit tellus mauris a diam maecenas sed enim ut sem. Consectetur libero id faucibus nisl tincidunt eget. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Scelerisque eu ultrices vitae auctor eu augue ut. Enim ut tellus elementum sagittis vitae et leo duis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Urna duis convallis convallis tellus id.</p>
+
+  <div class="html-footnotes-container custom-style"></div>
+  <div class="html-footnotes-container" 
+       data-fn-group="new-group" 
+       data-fn-index-style="i"
+       data-fn-brackets="false"
+       data-fn-create-return-links
+       data-fn-create-links
+  ></div>
+
+  <script src="footnote-genius.js"></script>
+  
+  <script>
+
+    FootnoteGenius.init();
+
+  </script>
+
+</body>
+</html>
