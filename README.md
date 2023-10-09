@@ -16,7 +16,7 @@ FootnoteGenius is your solution for effortlessly enhancing your HTML web pages w
 
 ## How to Use:
 
-1. Add the `footnote-genius.js` script to your HTML document.
+1. Add the `footnote-genius.min.js` script to your HTML document.
 
 2. Wherever you want a footnote reference, insert a `<sup>` element with the `html-footnote` class. Place the contents of the footnote inside it, excluding the list number.
 
